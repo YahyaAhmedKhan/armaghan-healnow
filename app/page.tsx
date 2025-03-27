@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Brain, Calendar, Heart, ArrowRight, Shield, CheckCircle } from "lucide-react"
@@ -10,9 +11,7 @@ export default function Home() {
       <header className="border-b bg-white sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-              <Heart className="h-4 w-4 text-white" />
-            </div>
+            <Image src="/healnow-logo.jpeg" alt="HealNow Logo" width={64} height={64} className="rounded-full" />
             <span className="font-bold text-xl text-primary">HealNow</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
@@ -40,6 +39,9 @@ export default function Home() {
         <section className="relative bg-gradient-to-br from-blue-50 to-blue-100 py-20 md:py-32">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-5xl md:text-6xl font-bold tracking-wide text-primary mb-8">
+                Talk. Heal. Thrive
+              </h1>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Healthcare Reimagined: Accessible, Confidential, Efficient
               </h1>
